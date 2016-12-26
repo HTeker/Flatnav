@@ -1,0 +1,13 @@
+.site-wrapper{color:#ffffff;width:100%;height:200px;margin:0 auto;font-family:'Raleway-Regular';font-size:16pt;display:inline-table;}*{padding:0;margin:0;}.title,
+.description,
+div.color-schemes,
+.sizes,
+div.code,
+div.color-wrapper,
+div.icons{margin:0 auto;min-width:20%;}div.color-wrapper{text-align:center;}br{display:block;margin:5px 0;}.title{text-align:center;font-family:'Raleway-Bold';font-size:40pt;}.title span{font-family:'Raleway-SemiBold';font-size:30pt;}.description{text-align:center;}div.color-schemes,
+div.sizes,
+div.code,
+div.icons{width:75%;font-size:20pt;}div.color-schemes *,
+div.sizes *,
+div.code *,
+div.icons *{font-size:14pt;}div.color-schemes div{margin:2px 20px;}div.color-schemes .color-scheme{width:120px;height:120px;display:inline-block;position:relative;}div.color-schemes .color-scheme p{position:absolute;bottom:0;right:5px;}div.color-schemes .color-scheme:hover{cursor:pointer;}div.color-schemes .turquoise{background-color:#1abc9c;}div.color-schemes .turquoise:hover{background-color:#17a689;}div.color-schemes .emerland{background-color:#2ecc71;}div.color-schemes .emerland:hover{background-color:#29b765;}div.color-schemes .river{background-color:#3498db;}div.color-schemes .river:hover{background-color:#258cd1;}div.color-schemes .amethyst{background-color:#af7ac4;}div.color-schemes .amethyst:hover{background-color:#a468bc;}div.color-schemes .asphalt{background-color:#34495e;}div.color-schemes .asphalt:hover{background-color:#2b3c4e;}div.color-schemes .sunflower{background-color:#f1c40f;}div.color-schemes .sunflower:hover{background-color:#dab10d;}div.color-schemes .carrot{background-color:#e67e22;}div.color-schemes .carrot:hover{background-color:#d67118;}div.color-schemes .alizarin{background-color:#e74c3c;}div.color-schemes .alizarin:hover{background-color:#e43725;}div.color-schemes .clouds{background-color:#ecf0f1;color:#555555;}div.color-schemes .clouds:hover{background-color:#c0cdd1;}div.color-schemes .concrete{background-color:#aab7b7;color:#555555;}div.color-schemes .concrete:hover{background-color:#8ea0a0;}div.sizes label{margin-right:30px;}div.sizes label[for=small]{font-size:10pt;}div.sizes label[for=medium]{font-size:18pt;}div.sizes label[for=large]{font-size:22pt;}div.code{font-size:10pt;line-height:12pt;background-color:#333333;padding:10pt;}.tab{margin-left:15px;}

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="css/flatnav.css">
+		<link rel="stylesheet" href="css/stylesheet.min.css">
+		<meta name="viewport" content="width=device-width">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<input type="checkbox" id="toggle-nav" class="toggle-nav">
+		<div class="container">
+			<nav>
+				<div>
+					<ul>
+						<li>
+							<span>Your Brand</span>
+						</li>
+						<li>
+							<a href="#" class="icon-home"></a>
+						</li>
+						<li>
+							<a href="#">About us</a>
+						</li>
+						<li>
+							<a href="#">Products</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+						<li class="right">
+							<a href="#" class="icon-cart"></a>
+						</li>
+					</ul>
+					<div>
+						<label for="toggle-nav" id="pull-menu" class="icon-pull-menu"></label>
+					</div>
+				</div>
+			</nav>
+			<div class="site-wrapper">
+				<br>
+				<div class="title">
+					FlatNav <span>v1.0</span><br>
+				</div>
+				<br>
+				<div class="description">
+					make your selection below and generate the code you need to start with.
+				</div>
+				<br>
+				<div class="color-schemes">
+					in 10 themes:
+					<br><br>
+					<div class="color-wrapper">
+						<div id="turquoise" class="color-scheme turquoise">
+							<p>turquoise</p>
+						</div>
+						<div id="emerland" class="color-scheme emerland">
+							<p>emerland</p>
+						</div>
+						<div id="river" class="color-scheme river">
+							<p>river</p>
+						</div>
+						<div id="amethyst" class="color-scheme amethyst">
+							<p>amethyst</p>
+						</div>
+						<div id="asphalt" class="color-scheme asphalt">
+							<p>asphalt</p>
+						</div>
+						<br>
+						<br>
+						<div id="sunflower" class="color-scheme sunflower">
+							<p>sunflower</p>
+						</div>
+						<div id="carrot" class="color-scheme carrot">
+							<p>carrot</p>
+						</div>
+						<div id="alizarin" class="color-scheme alizarin">
+							<p>alizarin</p>
+						</div>
+						<div id="clouds" class="color-scheme clouds">
+							<p>clouds</p>
+						</div>
+						<div id="concrete" class="color-scheme concrete">
+							<p>concrete</p>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="sizes">
+					and 4 sizes:
+					<br>
+					<span class="sizes">
+						<input type="radio" name="select" id="small">
+						<label for="small">small</label>
+
+						<input type="radio" checked="checked" name="select" id="standard">
+						<label for="standard">standard</label>
+
+						<input type="radio" name="select" id="medium">
+						<label for="medium">medium</label>
+
+						<input type="radio" name="select" id="large">
+						<label for="large">large</label>
+					</span>
+				</div>
+				<br>
+				<div class="code">
+				</div>
+				<br>
+				<div class="icons">
+					24 icons:
+					<br><br>
+					<div class="icon-arrow-bottom"> icon-arrow-bottom </div>
+					<div class="icon-arrow-right"> icon-arrow-right </div>
+					<div class="icon-audio"> icon-audio </div>
+					<div class="icon-cart"> icon-cart </div>
+					<div class="icon-catalog"> icon-catalog </div>
+					<div class="icon-cloud"> icon-cloud </div>
+					<div class="icon-contact"> icon-contact </div>
+					<div class="icon-contact-2"> icon-contact-2 </div>
+					<div class="icon-heart"> icon-heart </div>
+					<div class="icon-home"> icon-home </div>
+					<div class="icon-info"> icon-info </div>
+					<div class="icon-lock"> icon-lock </div>
+					<div class="icon-members"> icon-members </div>
+					<div class="icon-world"> icon-world </div>
+					<div class="icon-wifi"> icon-wifi </div>
+					<div class="icon-unlock"> icon-unlock </div>
+					<div class="icon-settings"> icon-settings </div>
+					<div class="icon-pull-menu"> icon-pull-menu </div>
+					<div class="icon-profile"> icon-profile </div>
+					<div class="icon-portfolio"> icon-portfolio </div>
+					<div class="icon-play"> icon-play </div>
+					<div class="icon-photo"> icon-photo </div>
+					<div class="icon-on"> icon-on </div>
+					<div class="icon-music"> icon-music </div>
+					<br>
+					<div class="description" style="text-align: left;">
+						Use these names as classes for your anchor tags of your nav: <br>
+						&lt;li&gt; <br>
+						  &nbsp&nbsp&nbsp&lt;a href="#" class="icon-home"&gt;Shopping cart&lt;/a&gt; <br>
+						&lt;/li&gt;
+						<br><br>
+						For placing nav-elements right (like the cart on this page) just add 'right' in your class name: <br>
+						&lt;li class="right"&gt; <br>
+						  &nbsp&nbsp&nbsp&lt;a href="#" class="icon-cart"&gt;&lt;/a&gt; <br>
+						&lt;/li&gt;
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			document.oncontextmenu = function() {return false;};
+
+			  $(document).mousedown(function(e){ 
+			    if( e.button == 2 ) { 
+			      alert('Just pay for the project :)'); 
+			      return false; 
+			    } 
+			    return true; 
+			  }); 
+
+			var str = '';
+			var theme = '';
+			var size = '';
+
+			var html = '&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br><span class="tab"></span>&lt;head&gt;<br><span class="tab"></span><span class="tab"></span>&lt;link rel="stylesheet" href="css/flatnav.css"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;meta name="viewport" content="width=device-width"&gt;<br><span class="tab"></span>&lt;/head&gt;<br><span class="tab"></span>&lt;body&gt;<br><span class="tab"></span><span class="tab"></span>&lt;input type="checkbox" id="toggle-nav" class="toggle-nav"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;div class="container"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;nav class="' + str + '"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;span&gt;Your Brand&lt;/span&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;a href="#"&gt; NavButton  &lt;/a&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for="toggle-nav" id="pull-menu" class="icon-pull-menu"&gt;&lt;/label&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/nav&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class="site-wrapper"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>other content of your website<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span>&lt;/body&gt;<br>&lt;/html&gt;';
+
+			var themes = ['turquoise', 'emerland', 'river', 'amethyst', 'asphalt', 'sunflower', 'carrot', 'alizarin', 'clouds', 'concrete'];
+
+			$('#turquoise, #emerland, #river, #amethyst, #asphalt, #sunflower, #carrot, #alizarin, #clouds, #concrete').click(function(){
+				
+				$.each(themes, function( index, value ) {
+					if ($('nav').hasClass(value)){
+						$('nav').removeClass(value);
+					} else {
+						$('nav').addClass(this.id);
+					}
+				});
+
+				$('nav').addClass(this.id);
+
+				theme = this.id;
+				str = size + ' ' + theme;
+
+				var html = '&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br><span class="tab"></span>&lt;head&gt;<br><span class="tab"></span><span class="tab"></span>&lt;link rel="stylesheet" href="css/flatnav.css"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;meta name="viewport" content="width=device-width"&gt;<br><span class="tab"></span>&lt;/head&gt;<br><span class="tab"></span>&lt;body&gt;<br><span class="tab"></span><span class="tab"></span>&lt;input type="checkbox" id="toggle-nav" class="toggle-nav"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;div class="container"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;nav class="' + str + '"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;span&gt;Your Brand&lt;/span&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;a href="#"&gt; NavButton  &lt;/a&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for="toggle-nav" id="pull-menu" class="icon-pull-menu"&gt;&lt;/label&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/nav&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class="site-wrapper"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>other content of your website<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span>&lt;/body&gt;<br>&lt;/html&gt;';
+
+				$("div.code").html(html);
+			});
+
+			var sizes = ['small', 'standard', 'medium', 'large'];
+
+
+			$('#small, #standard, #medium, #large').click(function(){
+				$.each(sizes, function( index, value ) {
+					if ($('nav').hasClass(value)){
+						$('nav').removeClass(value);
+					} else {
+						$('nav').addClass(this.id);
+					}
+				});
+
+				$('nav').addClass(this.id);
+
+				size = this.id;
+
+				if(size == "standard"){
+					size = "";
+				}
+
+				str = size + ' ' + theme;
+
+				var html = '&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br><span class="tab"></span>&lt;head&gt;<br><span class="tab"></span><span class="tab"></span>&lt;link rel="stylesheet" href="css/flatnav.css"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;meta name="viewport" content="width=device-width"&gt;<br><span class="tab"></span>&lt;/head&gt;<br><span class="tab"></span>&lt;body&gt;<br><span class="tab"></span><span class="tab"></span>&lt;input type="checkbox" id="toggle-nav" class="toggle-nav"&gt;<br><span class="tab"></span><span class="tab"></span>&lt;div class="container"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;nav class="' + str + '"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;span&gt;Your Brand&lt;/span&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span<span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;a href="#"&gt; NavButton  &lt;/a&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/li&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/ul&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;label for="toggle-nav" id="pull-menu" class="icon-pull-menu"&gt;&lt;/label&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/nav&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;div class="site-wrapper"&gt;<br><span class="tab"></span><span class="tab"></span><span class="tab"></span><span class="tab"></span>other content of your website<br><span class="tab"></span><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span><span class="tab"></span>&lt;/div&gt;<br><span class="tab"></span>&lt;/body&gt;<br>&lt;/html&gt;';
+
+				$("div.code").html(html);
+			});
+
+			
+
+			$("div.code").html(html);
+		});
+	</script>
+</html>
