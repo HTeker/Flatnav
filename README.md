@@ -3,7 +3,7 @@
 Dit was een persoonlijk project die ik in **september 2014** heb gedaan.
 
 ## Demo
-[Bekijk hier de demo](http://flatnav.000webhostapp.com/)
+[Bekijk hier de demo](https://flatnav.herokuapp.com/)
 
 ## Doel
 Een sjabloon van een responsieve navigatiemenu beschikbaar stellen.
